@@ -23,6 +23,15 @@ body {
 
 .section {
   padding: 94px 0;
+
+  &__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin-bottom: 50px;
+  }
 }
 
 .main-button {
@@ -38,4 +47,14 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
+}
+
+.socialmedia-icon__box {
+  &:hover,
+  &:focus {
+    background-color: $actionColor;
+    & .socialmedia-icon {
+      fill: #fff;
+    }
+  }
 }
