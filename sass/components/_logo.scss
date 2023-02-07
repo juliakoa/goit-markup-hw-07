@@ -1,0 +1,20 @@
+.logo {
+  font-family: $fontFamilySecondary;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+
+  &__part {
+    color: $actionColor;
+  }
+}
+
+.logo--start {
+  color: #000;
+  margin-right: 93px;
+}
+
+.logo--end {
+  color: #fff;
+}
