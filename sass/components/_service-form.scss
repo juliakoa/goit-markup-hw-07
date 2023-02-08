@@ -37,6 +37,23 @@
     border-radius: 4px;
     padding-left: 42px;
     outline: none;
+
+    &:focus,
+    &:hover {
+      border-color: $actionColor;
+
+      & + .service-form__icon {
+        fill: $actionColor;
+      }
+    }
+
+    &:not(:placeholder-shown) {
+      border-color: $actionColor;
+
+      & + .service-form__icon {
+        fill: $actionColor;
+      }
+    }
   }
 
   &__icon {
@@ -63,6 +80,12 @@
       line-height: 1.17;
       letter-spacing: 0.01em;
       color: rgba(117, 117, 117, 0.5);
+    }
+
+    &:focus,
+    &:hover,
+    &:not(:placeholder-shown) {
+      border-color: $actionColor;
     }
   }
   &__checkbox-label {
@@ -107,33 +130,6 @@
 
   &__button {
     text-align: center;
-  }
-}
-
-.service-form__input-box {
-  &:focus,
-  &:hover {
-    border-color: $actionColor;
-
-    & + .service-form__icon {
-      fill: $actionColor;
-    }
-  }
-
-  &:not(:placeholder-shown) {
-    border-color: $actionColor;
-
-    & + .service-form__icon {
-      fill: $actionColor;
-    }
-  }
-}
-
-.service-form__textarea {
-  &:focus,
-  &:hover,
-  &:not(:placeholder-shown) {
-    border-color: $actionColor;
   }
 }
 

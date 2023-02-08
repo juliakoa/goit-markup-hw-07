@@ -4,17 +4,13 @@
   font-weight: 700;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  color: $actionColor;
 
-  &__part {
-    color: $actionColor;
+  &--dark {
+    color: #000;
+    margin-right: 93px;
   }
-}
-
-.logo--start {
-  color: #000;
-  margin-right: 93px;
-}
-
-.logo--end {
-  color: #fff;
+  &--light {
+    color: #fff;
+  }
 }

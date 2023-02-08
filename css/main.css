@@ -108,7 +108,6 @@ header {
      -moz-column-gap: 46px;
           column-gap: 46px;
 }
-
 .navigation__item {
   font-size: 14px;
   font-weight: 500;
@@ -163,7 +162,6 @@ header {
      -moz-column-gap: 10px;
           column-gap: 10px;
 }
-
 .header-contact__item:hover, .header-contact__item:focus {
   color: #2196f3;
 }
@@ -177,17 +175,13 @@ header {
   font-weight: 700;
   line-height: 1.19;
   letter-spacing: 0.03em;
-}
-.logo__part {
   color: #2196f3;
 }
-
-.logo--start {
+.logo--dark {
   color: #000;
   margin-right: 93px;
 }
-
-.logo--end {
+.logo--light {
   color: #fff;
 }
 
@@ -284,7 +278,7 @@ header {
   height: 294px;
   position: relative;
 }
-.activities-section__card img {
+.activities-section__picture {
   height: 100%;
 }
 .activities-section__description-box {
@@ -422,9 +416,6 @@ header {
   fill: #2196f3;
 }
 
-.project-section {
-  width: 100%;
-}
 .project-section__buttons-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -452,6 +443,9 @@ header {
   border: #eeeeee solid 1px;
   padding-bottom: 20px;
 }
+.project-section__picture {
+  width: 100%;
+}
 .project-section__window {
   position: relative;
   overflow: hidden;
@@ -476,7 +470,7 @@ header {
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
 }
-.project-section__overlay > p {
+.project-section__overlay-description {
   font-family: "Roboto", sans-serif;
   color: #fff;
   font-size: 18px;
@@ -502,9 +496,6 @@ header {
   margin-left: 24px;
 }
 
-.project-section__card img {
-  width: 100%;
-}
 .project-section__card:hover, .project-section__card:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -750,6 +741,30 @@ footer {
   padding-left: 42px;
   outline: none;
 }
+.service-form__input-box:focus, .service-form__input-box:hover {
+  border-color: #2196f3;
+}
+.service-form__input-box:focus + .service-form__icon, .service-form__input-box:hover + .service-form__icon {
+  fill: #2196f3;
+}
+.service-form__input-box:not(:-moz-placeholder-shown) {
+  border-color: #2196f3;
+}
+.service-form__input-box:not(:-ms-input-placeholder) {
+  border-color: #2196f3;
+}
+.service-form__input-box:not(:placeholder-shown) {
+  border-color: #2196f3;
+}
+.service-form__input-box:not(:-moz-placeholder-shown) + .service-form__icon {
+  fill: #2196f3;
+}
+.service-form__input-box:not(:-ms-input-placeholder) + .service-form__icon {
+  fill: #2196f3;
+}
+.service-form__input-box:not(:placeholder-shown) + .service-form__icon {
+  fill: #2196f3;
+}
 .service-form__icon {
   position: absolute;
   top: 50%;
@@ -799,6 +814,15 @@ footer {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
+.service-form__textarea:not(:-moz-placeholder-shown) {
+  border-color: #2196f3;
+}
+.service-form__textarea:not(:-ms-input-placeholder) {
+  border-color: #2196f3;
+}
+.service-form__textarea:focus, .service-form__textarea:hover, .service-form__textarea:not(:placeholder-shown) {
+  border-color: #2196f3;
+}
 .service-form__checkbox-label {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -843,43 +867,6 @@ footer {
 }
 .service-form__button {
   text-align: center;
-}
-
-.service-form__input-box:focus, .service-form__input-box:hover {
-  border-color: #2196f3;
-}
-.service-form__input-box:focus + .service-form__icon, .service-form__input-box:hover + .service-form__icon {
-  fill: #2196f3;
-}
-.service-form__input-box:not(:-moz-placeholder-shown) {
-  border-color: #2196f3;
-}
-.service-form__input-box:not(:-ms-input-placeholder) {
-  border-color: #2196f3;
-}
-.service-form__input-box:not(:placeholder-shown) {
-  border-color: #2196f3;
-}
-.service-form__input-box:not(:-moz-placeholder-shown) + .service-form__icon {
-  fill: #2196f3;
-}
-.service-form__input-box:not(:-ms-input-placeholder) + .service-form__icon {
-  fill: #2196f3;
-}
-.service-form__input-box:not(:placeholder-shown) + .service-form__icon {
-  fill: #2196f3;
-}
-
-.service-form__textarea:not(:-moz-placeholder-shown) {
-  border-color: #2196f3;
-}
-
-.service-form__textarea:not(:-ms-input-placeholder) {
-  border-color: #2196f3;
-}
-
-.service-form__textarea:focus, .service-form__textarea:hover, .service-form__textarea:not(:placeholder-shown) {
-  border-color: #2196f3;
 }
 
 .service-form__checkbox-label .service-form__checkbox-box:checked ~ .service-form__checkmark {
